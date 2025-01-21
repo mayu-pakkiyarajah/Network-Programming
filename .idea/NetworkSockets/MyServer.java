@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         try(var scanner = new Scanner(System.in)) {
-            System.out.println("Is this server? (Y/N) : ");
+            System.out.println("Is this server? (y/n) : ");
 
             if(scanner.next().toLowerCase().equals("y")) {
                 new MyServer().start(PORT_NUMBER);
